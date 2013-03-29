@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src='/javascripts/Server.js'></script>
+    <script src='/javascripts/Draw.js'></script>
+    <script src='/javascripts/Buttons.js'></script>
+  </head>
+  <body>
+    <div id = 'fundation'>
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+      <input id = 'text' type = 'text' placeholder='テキスト入れて送信'></input>
+      <div id = 'text_send'>テキスト送信</div>
+      <input id = 'url' type = 'text' placeholder='画像url入れて送信' value = 'http://nodejs.jp/nodejs.org_ja/logo.png'></input>
+      <div id = 'url_send'>画像url送信</div>
+      <div id = 'chatlog'></div>
+  </div>
+  </body>
+</html>
